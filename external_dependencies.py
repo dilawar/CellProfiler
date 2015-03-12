@@ -17,6 +17,7 @@ Website: http://www.cellprofiler.org
 
 import logging
 logger = logging.getLogger(__package__)
+logger.setLevel(logging.DEBUG)
 import re
 import os.path
 import hashlib

@@ -1,0 +1,24 @@
+# USING setup.py
+
+- Make sure your proxy environment variables are set, if any. Also set them up for maven (mvn).
+
+- Install maven and java.
+
+- Install libtiff4-dev, and use `pip` to install libtiff, and javabridge
+
+    sudo -E pip install libtiff
+    sudo -E pip install javabridge
+
+- Now fetch external dependecies using 
+
+    python external_dependencies.py -o
+
+to get all dependencies and overwrite existing one, or 
+
+    python external_dependencies.py -m
+
+to get only missing dependencies.
+
+$ python setup.py build
+
+    
